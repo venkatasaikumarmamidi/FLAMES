@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAMES</title>
+    <link rel="stylesheet" href="enter.css">
+    <script>
+        function passvalue()
+        {
+            
+            var fname=document.getElementById("fname").value;
+            localStorage.setItem("textvalue1",fname);
+            var sname=document.getElementById("sname").value;
+            localStorage.setItem("textvalue2",sname);
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <h1><font color="#01fe87" face="Verdana">FIND UR RELATIONSHIP</font></h1><br>
+    <form action="result.html">
+        <fieldset>
+            <legend><font color="#01fe87" face="Verdana">First Name</font></legend>
+            <input type="text" placeholder="Enter First Name" id="fname">
+        </fieldset><br><br>
+        <fieldset>
+            <legend><font color="#01fe87" face="Verdana">Second Name</font></legend>
+            <input type="text" placeholder="Enter Second Name" id="sname">
+        </fieldset>
+        <hr color="#01fe87">
+        <center><button type="submit" onclick="passvalue();">Submit</button></center>
+    </form>
+</body>
+</html>

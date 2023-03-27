@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations!!!</title>
+    <link rel="stylesheet" href="res.css">
+<script src="res.js">
+       //here is the function of main logic   
+</script>
+</head>
+<body bgcolor="#252839">
+    <h1><font color="#01fe87" face="Verdana">Congratulations!!!</font></h1><br>
+        <font color="#fff"> Hello...<p id="f" color=""></p></font>
+        <font color="#fff"><span id="s" color=""></span></font>
+        <hr color="#01fe87">
+        <div border="solid"><font color="#fff" face="Verdana" size="5px"><p id="c"></p></font></div>
+        <br><br><br><center><button class="open" type="submit" onclick="fun();">Result</button></center><br>
+
+ 
+    <script src="confetti.js"></script>
+    <script>
+        //here is the function for confetti logic
+        const openbtn=document.querySelector('.open');
+        openbtn.addEventListener('click',() => {
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  for stopping the confetti 
+
+        const stop = () => {
+            setTimeout(function() {
+                
+                confetti.stop()
+            }, 6000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+   
+        };
+
+        setTimeout(function(){
+            window.location="Done.html";
+        },9000); 
+// after this here we are calling both the function so it works
+        start();
+        stop();
+        
+     });
+    </script>
+ 
+</body>
+</html>

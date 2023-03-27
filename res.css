@@ -1,0 +1,20 @@
+
+button{
+    position:relative;
+    width:100px;
+    text-align: center;
+    font-weight: bold;
+    border:2px solid #01fe87;
+    background: transparent;
+    color:white;
+    cursor:pointer;
+    overflow:hidden;
+
+}
+div{
+    border:5px solid #01fe87;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-decoration-color: aliceblue;
+}
