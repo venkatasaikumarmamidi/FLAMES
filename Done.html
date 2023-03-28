@@ -3,36 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
     <title>Thank u!!!</title> 
     <link rel="stylesheet" href="done.css">
 </head>
 <body>
     <div class="container">
-        <span class="text first-text">We are</span>
-        <span class="text sec-text">team</span>
+    <span class="text first-text">We <span id="ABC">TEAM</span> -</span>
+        <span class="text sec-text"></span>
+        <center><a href="enter.html"><button type="submit">Try Again</button></a></center>
     </div>
-
     <script>
         const text = document.querySelector(".sec-text");
-
         const textLoad = () => {
             setTimeout(() => {
-                text.textContent = "TEAM";
+                text.textContent = "Sri Ram Charan";
             },0);
             setTimeout(() => {
-                text.textContent = "JASWANTH";
-            },1000);
-            setTimeout(() => {
-                text.textContent = "VENKAT";
+                text.textContent = "Venkata Sai Kumar";
             }, 4000);
             setTimeout(() => {
-                text.textContent = "CHARAN";
+                text.textContent = "Meesala Jaswanth";
             }, 8000); //1s = 1000 milliseconds
         }
-
         textLoad();
-        setInterval(textLoad, 15000);
+        setInterval(textLoad, 12000);
     </script>    
 </body>
 </html>
