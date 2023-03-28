@@ -17,3 +17,11 @@ button{
     overflow:hidden;
 
 }
+@media only screen and (max-width:600px){
+    #res1{
+        font-size:medium;
+    }
+    .res2{
+        width: 150px;
+    }
+}
