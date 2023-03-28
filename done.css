@@ -14,7 +14,7 @@ body{
     overflow: hidden;
 }
 .container{
-    width: 246px;
+    width: 246px 50px;
     overflow: hidden;
 }
 .container .text{
@@ -22,6 +22,10 @@ body{
     color: #01fe87;
     font-size: 30px;
     font-weight: 600;
+}
+.text.sec-text,#ABC{
+    color: #01fe87;
+    font-size: 40px;
 }
 .container .text.first-text{
     color: #FFF;
@@ -33,7 +37,7 @@ body{
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #252839;
+    background-color: #010718;
     border-left: 2px solid #01fe87;
     animation: animate 4s steps(12) infinite;
 }
