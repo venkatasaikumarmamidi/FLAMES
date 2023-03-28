@@ -17,4 +17,16 @@ div{
     justify-content: center;
     align-items:center;
     text-decoration-color: aliceblue;
+    border-top-right-radius:20px ;
+    border-bottom-left-radius:20px ;
+    padding: 50px 50px;
+    margin: 80px 80px;
+}
+#b,#s,#f
+{
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    font-size: medium;
+    font-weight: 100;
 }
